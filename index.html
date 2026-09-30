@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Limited-edition JMU campus shirt supporting Friends of Valley Charities.">
+
+    <title>JMU Campus Tee | Dukes Impact Challenge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700;8..60,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a class="brand" href="#top">JMU Campus Tee</a>
+
+        <div class="nav-links">
+            <a href="#shirt">The Shirt</a>
+            <a href="#impact">Our Impact</a>
+            <a href="#process">The Process</a>
+            <a href="#order" class="nav-order">Order</a>
+        </div>
+    </nav>
+
+    <main id="top">
+
+        <!-- HERO: full-bleed product -->
+        <section class="hero" aria-label="JMU Campus Tee">
+            <div class="hero-media">
+                <img
+                    src="images/back-shirt-render.jpeg"
+                    alt="Back of the JMU campus tee with illustrated campus and mountains"
+                    class="hero-image">
+            </div>
+
+            <div class="hero-scrim"></div>
+
+            <div class="hero-content">
+                <p class="brand-mark">JMU Campus Tee</p>
+
+                <h1>A piece of JMU.<br>Made for the Valley.</h1>
+
+                <p class="hero-description">
+                    Limited-edition campus tee — $35. 100% of profits support
+                    Friends of Valley Charities.
+                </p>
+
+                <a href="#order" class="primary-button">Order yours</a>
+            </div>
+
+            <div class="scroll-indicator" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+
+        <!-- THE SHIRT: front / back without card chrome -->
+        <section class="product-section" id="shirt">
+            <div class="section-heading reveal">
+                <p class="eyebrow">The Shirt</p>
+                <h2>JMU, illustrated.</h2>
+                <p>A wearable view of the campus that brings us together.</p>
+            </div>
+
+            <div class="shirt-pair">
+                <figure class="shirt-panel reveal">
+                    <img
+                        src="images/front-shirt1.jpeg"
+                        alt="Front of the JMU campus shirt with mountain mark">
+                    <figcaption>Front</figcaption>
+                </figure>
+
+                <figure class="shirt-panel reveal">
+                    <img
+                        src="images/back-shirt1.jpeg"
+                        alt="Back design of the JMU campus shirt">
+                    <figcaption>Back</figcaption>
+                </figure>
+            </div>
+        </section>
+
+
+        <!-- IMPACT -->
+        <section class="impact-section" id="impact">
+            <div class="impact-content reveal">
+                <p class="impact-label">Our Impact</p>
+                <div class="impact-number">100%</div>
+                <h2>of profits go to charity.</h2>
+                <p class="impact-description">
+                    Every purchase supports Friends of Valley Charities through
+                    our Dukes Impact Challenge project.
+                </p>
+                <p class="impact-charity">
+                    Supporting
+                    <strong>Friends of Valley Charities</strong>
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ORDER -->
+        <section class="order-section" id="order">
+            <div class="order-intro reveal">
+                <p class="eyebrow">Order Yours</p>
+                <h2>Wear JMU.<br>Support the Valley.</h2>
+                <p>
+                    $35 per shirt. Choose your size and submit below.
+                    No payment is collected here — we’ll contact you with
+                    payment and pickup details.
+                </p>
+            </div>
+
+            <div class="order-layout">
+                <div class="order-product reveal">
+                    <img
+                        src="images/front-back1.jpeg"
+                        alt="JMU campus shirt front and back">
+
+                    <div class="order-product-info">
+                        <div>
+                            <h3>JMU Campus Tee</h3>
+                            <p>Cream</p>
+                        </div>
+                        <strong>$35</strong>
+                    </div>
+                </div>
+
+                <div class="order-form-container reveal">
+                    <form id="orderForm" novalidate>
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@email.com"
+                                    autocomplete="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="(555) 555-5555"
+                                    autocomplete="tel">
+                            </div>
+                        </div>
+
+                        <p class="contact-note">
+                            Provide at least an email or phone number.
+                        </p>
+
+                        <div class="form-group">
+                            <label id="sizes-label">Sizes</label>
+                            <p class="sizes-hint">
+                                Add a quantity for each size you want — $35 each.
+                            </p>
+                            <div
+                                class="size-qty-list"
+                                role="group"
+                                aria-labelledby="sizes-label">
+                                <div class="size-qty-row" data-size="S">
+                                    <span class="size-qty-label">S</span>
+                                    <div class="quantity-selector">
+                                        <button type="button" class="qty-decrease" aria-label="Decrease S">−</button>
+                                        <span class="qty-display">0</span>
+                                        <button type="button" class="qty-increase" aria-label="Increase S">+</button>
+                                    </div>
+                                </div>
+                                <div class="size-qty-row" data-size="M">
+                                    <span class="size-qty-label">M</span>
+                                    <div class="quantity-selector">
+                                        <button type="button" class="qty-decrease" aria-label="Decrease M">−</button>
+                                        <span class="qty-display">0</span>
+                                        <button type="button" class="qty-increase" aria-label="Increase M">+</button>
+                                    </div>
+                                </div>
+                                <div class="size-qty-row" data-size="L">
+                                    <span class="size-qty-label">L</span>
+                                    <div class="quantity-selector">
+                                        <button type="button" class="qty-decrease" aria-label="Decrease L">−</button>
+                                        <span class="qty-display">0</span>
+                                        <button type="button" class="qty-increase" aria-label="Increase L">+</button>
+                                    </div>
+                                </div>
+                                <div class="size-qty-row" data-size="XL">
+                                    <span class="size-qty-label">XL</span>
+                                    <div class="quantity-selector">
+                                        <button type="button" class="qty-decrease" aria-label="Decrease XL">−</button>
+                                        <span class="qty-display">0</span>
+                                        <button type="button" class="qty-increase" aria-label="Increase XL">+</button>
+                                    </div>
+                                </div>
+                                <div class="size-qty-row" data-size="XXL">
+                                    <span class="size-qty-label">XXL</span>
+                                    <div class="quantity-selector">
+                                        <button type="button" class="qty-decrease" aria-label="Decrease XXL">−</button>
+                                        <span class="qty-display">0</span>
+                                        <button type="button" class="qty-increase" aria-label="Increase XXL">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-summary">
+                            <div id="summaryLines" class="summary-lines">
+                                <p class="summary-empty">No sizes selected yet</p>
+                            </div>
+                            <div class="total-row">
+                                <span>Total</span>
+                                <strong id="totalPrice">$0</strong>
+                            </div>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                            id="submitButton">
+                            Place Order
+                        </button>
+
+                        <p class="payment-note">
+                            No payment information is collected on this website.
+                        </p>
+
+                        <p class="form-message" id="formMessage" role="status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROCESS -->
+        <section class="process-section" id="process">
+            <div class="process-intro reveal">
+                <p class="eyebrow">The Process</p>
+                <h2>From screen<br>to shirt.</h2>
+                <p>Printed for JMU — a look behind the drop.</p>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-container reveal">
+                    <video autoplay muted loop playsinline>
+                        <source
+                            src="videos/front-shirt-press-moving-shorter.mp4"
+                            type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>Made for JMU</p>
+                        <h2>Watch it come to life.</h2>
+                    </div>
+                </div>
+
+                <div class="video-container reveal">
+                    <video autoplay muted loop playsinline>
+                        <source
+                            src="videos/front-inking-long.mp4"
+                            type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <p>The Process</p>
+                        <h2>From screen to shirt.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-feature reveal">
+                <img
+                    src="images/front-back1.jpeg"
+                    alt="Finished front and back JMU shirts">
+            </div>
+        </section>
+
+
+        <!-- CLOSING -->
+        <section class="closing-section">
+            <div class="reveal">
+                <p class="eyebrow">Dukes Impact Challenge</p>
+                <h2>Made at JMU.<br>Made to give back.</h2>
+                <a href="#order" class="primary-button">Order</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JMU Campus Tee</p>
+        <p>Dukes Impact Challenge</p>
+    </footer>
+
+    <div class="mobile-order-bar">
+        <div>
+            <strong>$35</strong>
+            <span>JMU Campus Tee</span>
+        </div>
+        <a href="#order">Order</a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
