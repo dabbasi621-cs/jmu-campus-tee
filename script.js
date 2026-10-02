@@ -145,7 +145,7 @@ orderForm.addEventListener("submit", function (event) {
             console.error("Checkout error:", error);
 
             showError(
-                "We couldn't open Square checkout. Please try again."
+                error.message || "We couldn't open Square checkout. Please try again."
             );
 
             submitButton.disabled = false;
