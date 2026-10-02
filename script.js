@@ -179,3 +179,8 @@ revealElements.forEach(function (element) {
 });
 
 updateOrder();
+
+window.addEventListener("pageshow", function () {
+    submitButton.disabled = false;
+    submitButton.textContent = "Continue to Payment";
+});
